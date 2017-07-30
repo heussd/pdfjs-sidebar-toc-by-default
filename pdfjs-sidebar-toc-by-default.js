@@ -6,4 +6,6 @@
 // @version     1.0
 // ==/UserScript==
 
-document.location.href = document.location.href + "#pagemode=outline"
+if ( ! document.location.href.endsWith("#pagemode=outline")) {
+	document.location.href = document.location.href + "#pagemode=outline"
+}
